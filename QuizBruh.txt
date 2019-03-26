@@ -1,0 +1,55 @@
+package week3;
+
+import javax.swing.JOptionPane;
+
+public class QuizBruh {
+    
+    public static void main(String [] args){
+    final int numQs = 3;    
+    int rightAns = 0;
+    int qNum = 1;
+    
+    String grantQ, bethQ, linQ;
+    String grantA, bethA, linA;
+    grantQ = "Who is buried in Grant's tomb?";
+    bethQ = "Who wrote Bethoven's fifth symphony?";
+    linQ = "Who is honored at the Lincoln memorial?";
+    
+    grantA = "Grant";
+    bethA = "Bethoven";
+    linA = "Lincoln";
+    
+    if(JOptionPane.showInputDialog(qNum + ". " + grantQ).equals(grantA.toLowerCase())){
+        JOptionPane.showMessageDialog(null, "Correct!");
+        rightAns++;
+    }else{
+        JOptionPane.showMessageDialog(null, "Incorrect!");
+    }//end if else
+    
+    qNum ++;
+    //end Q 1
+    
+    if(JOptionPane.showInputDialog(qNum + ". " + bethQ).equals(bethA.toLowerCase())){
+        JOptionPane.showMessageDialog(null, "Correct!");
+        rightAns++;
+    }else{
+        JOptionPane.showMessageDialog(null, "Incorrect!");
+    }//end if else
+    
+    qNum ++;
+    //end Q 2
+    
+    if(JOptionPane.showInputDialog(qNum + ". " + linQ).equals(linA.toLowerCase())){
+        JOptionPane.showMessageDialog(null, "Correct!");
+        rightAns++;
+    }else{
+        JOptionPane.showMessageDialog(null, "Incorrect!");
+    }//end if else
+    
+    
+    //end Q 3    
+    
+    JOptionPane.showMessageDialog(null, "You got " + rightAns + "/" + numQs + " correct!");
+    
+    }//close main method
+}//close class
